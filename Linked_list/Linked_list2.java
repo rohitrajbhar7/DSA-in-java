@@ -4,6 +4,15 @@ package Linked_list;
 
 public class Linked_list2{
 
+   
+        public static void displayNode(Node head){
+            while(head != null){
+                System.out.println(head.data);
+                head= head.nextAddress;
+            }
+        }
+    
+
     public static class Node{
         int data;
         Node nextAddress ;
@@ -32,11 +41,14 @@ public class Linked_list2{
         
 
         // Now accessing the using the loop if only head  details given
+        // Node temp= a;
+        // while(temp != null){
+        //     System.out.println(temp.data);
+        //     temp= temp.nextAddress;
+        // }
 
-        Node temp= a;
-        while(temp != null){
-            System.out.println(temp.data);
-            temp= temp.nextAddress;
-        }
+    //    now lets create a fucnction who will only take the head node and print all the node
+        // Node temp=a;
+       displayNode(a);
     }
 }
